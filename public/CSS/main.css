@@ -1,0 +1,339 @@
+.user-specific-option,
+.connection-menu-button,
+.general-site-option,
+.footer-option,
+.media-link {
+  text-decoration: none;
+  padding: 5px;
+  /* color: #c7ffd8; */
+  color: #f6f6f6;
+  text-transform: capitalize;
+}
+
+/* // a */
+a:hover {
+  color: #98ded9;
+}
+
+#alt_txt {
+  visibility: hidden;
+  position: fixed;
+}
+
+/* // b */
+body {
+  margin: 0px;
+  font-family: "Ubuntu", sans-serif;
+}
+.brand-logo {
+  width: 150px;
+}
+.brand-moto {
+  font-size: 16px;
+  color: #98ded9;
+}
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #555a99fc;
+}
+.brand-info {
+  float: left;
+  /* position: absolute; */
+}
+.brand-name {
+  color: #98de65;
+}
+
+/* // c */
+.category h2 {
+  color: #555a99fc;
+}
+.create-connection-btn {
+  list-style: none;
+  float: right;
+  background-color: #555a99fc;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.create-connection-btn:hover {
+  color: #98ded9;
+}
+
+/* // e */
+.connection-link {
+  text-decoration: none;
+  color: black;
+}
+.connection-link:hover {
+  /* color: #98ded9; */
+  color: #98de8f;
+  text-decoration: underline;
+}
+.connection-in-category {
+  margin-left: 35px;
+}
+.connection-menu-container {
+  float: right;
+}
+.connection-menu-button {
+  list-style: none;
+}
+.connection-info-left {
+  /* --len:200px;
+    height: var(--len);
+    width: var(--len); */
+  margin-top: 20px;
+  /* border: 1px solid; */
+  float: left;
+}
+.connection-info-right {
+  /* --len:200px;
+    height: var(--len);
+    width: var(--len); */
+  /* border: 1px solid; */
+  float: left;
+  margin-left: 20px;
+}
+.connection-info-bottom {
+  position: relative;
+  top: 10px;
+  clear: both;
+  width: 450px;
+  /* border: 1px solid; */
+}
+.connection-picture {
+  max-width: 300px;
+  max-height: 300px;
+}
+.connection-info-basics {
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+/* // f */
+form button {
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #555a99fc;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+}
+form button:hover {
+  color: #98ded9;
+}
+
+footer {
+  padding: 40px 5px;
+  background-color: #555a99fc;
+}
+
+.footer-media-nav {
+  float: right;
+}
+.fa {
+  color: white;
+  font-size: 36px;
+  padding: 0px 5px;
+}
+.fa:hover {
+  color: #98ded9;
+}
+
+/* // g */
+.general-site-nav {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.general-site-option {
+  margin: 20px;
+}
+
+/* // h */
+header {
+  background-color: #555a99fc;
+  content: "";
+  clear: both;
+}
+hr {
+  width: 98%;
+  border: none;
+  border-top: 1px solid white;
+}
+.header-footer {
+  content: "";
+  clear: both;
+}
+
+/* // m */
+main {
+  /* min-height: 500px; */
+  min-height: 50vh;
+  margin: 5% 20%;
+  /* border: 1px solid; */
+}
+
+.media-link-icon {
+  width: 30px;
+}
+
+/* // n */
+.new-connection-input-container {
+  line-height: 25px;
+}
+
+/* // p  */
+
+/* // R */
+.rsvp-btn:hover {
+  color: #000;
+}
+.rsvp-btn-yes {
+  background-color: #98de65;
+}
+
+.rsvp-btn-no {
+  background-color: #d33;
+}
+
+.rsvp-btn-maybe {
+  background-color: cadetblue;
+}
+#rsvp-count {
+  font-family: "Ubuntu", sans-serif;
+  color: #549994;
+}
+
+.rsvp-ed-connections {
+  margin-top: 100px;
+}
+
+/* // s */
+.site-header {
+  padding: 10px 25px;
+  position: relative;
+}
+
+#snackbar {
+  display: inline-block;
+  margin: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  padding: 16px;
+  z-index: 2;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  /* height: 4rem; */
+  min-width: 20%;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  /* color: ; */
+  font-size: 1.25rem;
+  text-transform: capitalize; /* or uppercase*/
+}
+.snackbar-message-error {
+  color: #d33;
+  border-color: #d33;
+}
+.snackbar-message-success {
+  margin: 10px;
+  color: #98de8f;
+  border-color: #98de8f;
+}
+#snackbar.show {
+  visibility: visible;
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  animation: fadein 0.05s, fadeout 0.05s 2.5s;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 20%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    top: 20%;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* // t */
+textarea {
+  resize: none;
+}
+.table-left-colum {
+  text-align: left;
+}
+td,
+th {
+  padding: 5px;
+  width: 20vh;
+  text-align: center;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+}
+table {
+  width: 80%;
+}
+th {
+  color: #5275ef;
+}
+
+/* // u */
+.user-specific-nav {
+  font-size: 20px;
+  padding: 10px;
+  float: right;
+  /* position: absolute;
+    right: 0px; */
+}
+
+.user-specific-option {
+  padding: 10px;
+}

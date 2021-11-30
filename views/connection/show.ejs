@@ -1,0 +1,55 @@
+<%- include('../partials/header.ejs') %>
+    <!--
+        main section
+    -->
+    <main>
+        <%= %>
+       <section class="connection">
+           <div class="connection-menu-container">
+            <% if(output.rsvps>0){ %>
+                <h3>Count of RSVP 'yes' : <span id="rsvp-count"><%= output.rsvps %></span></h3>
+            <% }else{%>
+                <h3>No one has done RSVP 'yes' to the connection</h3><br>
+            <%} %>
+            <% if(userInfo && userInfo['id']==output.hostName._id) { %>
+                    <form>
+                        <button class="rsvp-btn-no" type="submit" formmethod="POST" formaction="/connections/<%= output._id%>?_method=DELETE">Delete</button>
+                        <button class="rsvp-btn-maybe" type="submit" formmethod="GET" formaction="/connections/<%= output._id%>/edit">Update</button>
+                    </form>
+                <% } else {%>
+                    <h3>RSVP to attend!</h3>
+                    <form action="">
+                        <button class="rsvp-btn-yes" class="rsvp-btn" type="submit" formmethod="POST" formaction="/connections/<%= output._id%>/rsvp?commitment=yes">Yes</button>
+                        <button class="rsvp-btn-maybe" class="rsvp-btn" type="submit" formmethod="POST" formaction="/connections/<%= output._id%>/rsvp?commitment=maybe">Maybe</button>
+                        <button class="rsvp-btn-no" class="rsvp-btn" type="submit" formmethod="POST" formaction="/connections/<%= output._id%>/rsvp?commitment=no">No</button>
+                    </form>
+                <% } %>
+           </div>
+           <h2 class="connection-title">
+                <%= output.title%>
+           </h2>
+            <div class="connection-info">
+                <div class="connection-info-left">
+                    <img class="connection-picture" src="<%= output.image%>" alt="connection picture">
+                </div>
+                <div class="connection-info-right">
+                    <p class="connection-info-basics">
+                        Hosted by: <em><%= output.hostName.firstName + " " + output.hostName.lastName %></em><br>
+                        Topic: <em><%= output.topic%></em><br>
+                        <%= output.startTime%> to <%= output.endTime%> (24 hour format)<br>
+                        on <%= output.date%> <br>
+                        <%= output.location%>
+                    </p>
+                </div>
+                <div class="connection-info-bottom">
+                    <p class="connection-detail">
+                        <%= output.details%>
+                    </p>
+                </div>
+            </div>
+       </section>
+    </main>
+    <!--
+        footer section
+    -->
+    <%- include('../partials/footer.ejs') %>

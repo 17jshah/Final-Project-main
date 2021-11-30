@@ -1,0 +1,42 @@
+<%- include('../partials/header.ejs') %>
+    <!--
+        main section
+    -->
+    <main>
+        <Section class="new_connection">
+            <h2 class="new-connection-heading">About the connection</h2>
+            <div class="new-connection-input-container">
+                <form method="POSt">
+                    <label  class="connection-input-lable">Category</label><br>
+                    <input type="text" name="category" class="connection-input" placeholder="Category" required>
+                    <br>
+                    <label  class="connection-input-lable">Title</label><br>
+                    <input type="text" name="title" class="connection-input" placeholder="Title" required>
+                    <br>
+                    <label  class="connection-input-lable">Details</label><br>
+                    <textarea name="details" placeholder="Description" cols="30" rows="6" required minlength="10"></textarea>
+                    <br>
+                    <label  class="connection-input-lable">Where</label><br>
+                    <input type="text" name="location" class="connection-input" placeholder="Location" required>
+                    <br>
+                    <label  class="connection-input-lable">When</label><br>
+                    <input type="date" name="date" class="connection-input" required>
+                    <br>
+                    <label  class="connection-input-lable">Start</label><br>
+                    <input type="time" name="startTime" class="connection-input" required>
+                    <br>
+                    <label  class="connection-input-lable">End</label><br>
+                    <input type="time" name="endTime" class="connection-input" required>
+                    <br>
+                    <label  class="connection-input-lable">Image URL</label><br>
+                    <input type="url" name="image" class="connection-input" placeholder="Image URL" required>
+                    <br><br>
+                    <button formaction="/connections">Create New connection</button>
+                </form>
+            </div>
+        </Section>
+    </main>
+    <!--
+        footer section
+    -->
+    <%- include('../partials/footer.ejs') %>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/main.css" type="text/css">
+    <script src="/javascript/extra.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- notifications --> 
+    <div id="snackbar">
+        <% if(errorMessages.length>0){ %>
+            <% errorMessages.forEach(message =>{ %>
+                <div class="snackbar-message-error"> - <%= message %>  </div>
+            <% }) %>
+        <% } %>
+    
+
+            <%if(successMessages.length>0){ 
+            successMessages.forEach(message => { %>
+                <div class="snackbar-message-success"> <%= message %> </div> 
+                <% });%>
+                <% } %>
+    </div>
+    
+
+    <!--
+        header section
+    -->
+    <header>
+        <div class="site-header">
+            <div class="brand-info">
+                <a href="/">
+                    <img class="brand-logo" src="https://www.logolynx.com/images/logolynx/30/30914bdf0cc561d4ca751f69dd7d6230.jpeg" alt="cricket logo"> 
+                    
+                </a>
+                <p class="brand-moto">Lets meet, Lets Play and enjoy together </p>
+            </div>
+            <nav class="user-specific-nav">
+                <% if(userInfo) { %>
+                    <a href="/users/profile" class="user-specific-option">Welcome, <%= userInfo['name'] %></a>
+                    <a href="/users/logout" class="user-specific-option">Log out</a>
+                <% } else { %>
+                    <a href="/users/login" class="user-specific-option">Login</a>
+                    <a href="/users/signup" class="user-specific-option">Sign-up</a>
+                <% } %>
+            </nav>
+
+        </div>
+        <div class="header-footer">
+            <hr>
+            <nav class="general-site-nav">
+                <a href="/connections" class="general-site-option">Connections</a>
+                <% if(userInfo) { %>
+                <a href="/connections/new" class="general-site-option">Create New Connections</a>
+                <% } %>
+            </nav>
+
+        </div>
+    </header>
