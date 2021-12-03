@@ -1,0 +1,157 @@
+[{
+  "_id": {
+    "$oid": "61a5162ab3fb745cb4665a93"
+  },
+  "user": {
+    "$oid": "61a5160eb3fb745cb4665a92"
+  },
+  "connection": {
+    "$oid": "61a513fcfb3db95278891c76"
+  },
+  "commitment": "yes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a51635b3fb745cb4665a94"
+  },
+  "user": {
+    "$oid": "61a5160eb3fb745cb4665a92"
+  },
+  "connection": {
+    "$oid": "61a514d3fb3db95278891c77"
+  },
+  "commitment": "yes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a51638b3fb745cb4665a95"
+  },
+  "user": {
+    "$oid": "61a5160eb3fb745cb4665a92"
+  },
+  "connection": {
+    "$oid": "61a51599fb3db95278891c78"
+  },
+  "commitment": "yes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6d50a7a40b63a5403cad7"
+  },
+  "user": {
+    "$oid": "61a5131afb3db95278891c75"
+  },
+  "connection": {
+    "$oid": "61a5174db3fb745cb4665a96"
+  },
+  "commitment": "no",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6d5117a40b63a5403cad8"
+  },
+  "user": {
+    "$oid": "61a5131afb3db95278891c75"
+  },
+  "connection": {
+    "$oid": "61a51822b3fb745cb4665a97"
+  },
+  "commitment": "yes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6d5177a40b63a5403cad9"
+  },
+  "user": {
+    "$oid": "61a5131afb3db95278891c75"
+  },
+  "connection": {
+    "$oid": "61a519f4b3fb745cb4665a98"
+  },
+  "commitment": "yes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6d7597a40b63a5403cadb"
+  },
+  "user": {
+    "$oid": "61a6d73c7a40b63a5403cada"
+  },
+  "connection": {
+    "$oid": "61a514d3fb3db95278891c77"
+  },
+  "commitment": "yes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6d7607a40b63a5403cadc"
+  },
+  "user": {
+    "$oid": "61a6d73c7a40b63a5403cada"
+  },
+  "connection": {
+    "$oid": "61a513fcfb3db95278891c76"
+  },
+  "commitment": "maybe",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6d7727a40b63a5403cadd"
+  },
+  "user": {
+    "$oid": "61a6d73c7a40b63a5403cada"
+  },
+  "connection": {
+    "$oid": "61a51599fb3db95278891c78"
+  },
+  "commitment": "no",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6d77a7a40b63a5403cade"
+  },
+  "user": {
+    "$oid": "61a6d73c7a40b63a5403cada"
+  },
+  "connection": {
+    "$oid": "61a5174db3fb745cb4665a96"
+  },
+  "commitment": "yes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6d7817a40b63a5403cadf"
+  },
+  "user": {
+    "$oid": "61a6d73c7a40b63a5403cada"
+  },
+  "connection": {
+    "$oid": "61a51822b3fb745cb4665a97"
+  },
+  "commitment": "maybe",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6d7877a40b63a5403cae0"
+  },
+  "user": {
+    "$oid": "61a6d73c7a40b63a5403cada"
+  },
+  "connection": {
+    "$oid": "61a519f4b3fb745cb4665a98"
+  },
+  "commitment": "yes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6ddf41f904d45b0005b63"
+  },
+  "user": {
+    "$oid": "61a6db6f1f904d45b0005b61"
+  },
+  "connection": {
+    "$oid": "61a514d3fb3db95278891c77"
+  },
+  "commitment": "yes",
+  "__v": 0
+}]

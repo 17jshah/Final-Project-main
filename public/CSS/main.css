@@ -12,7 +12,7 @@
 
 /* // a */
 a:hover {
-  color: #98ded9;
+  color: #f8fcfb;
 }
 
 #alt_txt {
@@ -30,7 +30,7 @@ body {
 }
 .brand-moto {
   font-size: 16px;
-  color: #98ded9;
+  color: #fafcfc;
 }
 .button {
   padding: 10px;
@@ -47,7 +47,7 @@ body {
 
 /* // c */
 .category h2 {
-  color: #555a99fc;
+  color: red;
 }
 .create-connection-btn {
   list-style: none;
@@ -128,7 +128,7 @@ form button:hover {
 
 footer {
   padding: 40px 5px;
-  background-color: #555a99fc;
+  background-color: darkgreen;
 }
 
 .footer-media-nav {
@@ -155,7 +155,7 @@ footer {
 
 /* // h */
 header {
-  background-color: #555a99fc;
+  background-color: darkgreen;
   content: "";
   clear: both;
 }

@@ -1,24 +1,24 @@
 // const { findByIdAndDelete } = require('../models/connection');
-const { connections } = require("mongoose");
+const { connections, body } = require("mongoose");
 const connection = require("../models/connection");
 const model = require("../models/connection");
 const model_rsvp = require("../models/rsvp");
 
 //GET /connections: send all the connection
-exports.showAll = (req, res, next) => {
+exports.index = (req, res, next) => {
   model
     .find()
     .then((connections) => {
       //
       let output = {};
-      connections.forEach((conn) => {
-        if (output[conn.category]) {
-          output[conn.category].push(conn);
+      connections.forEach((connection) => {
+        if (output[connection.category]) {
+          output[connection.category].push(connection);
         } else {
-          output[conn.category] = [conn];
+          output[connection.category] = [connection];
         }
       });
-      res.render("./connection/showAll", { output });
+      res.render("./connection/index", { output });
     })
     .catch((err) => next(err));
 };

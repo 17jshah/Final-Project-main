@@ -1,0 +1,177 @@
+[{
+  "_id": {
+    "$oid": "61a513fcfb3db95278891c76"
+  },
+  "category": "Practice",
+  "title": "Fielding Practice",
+  "details": "The team will start the Practice session with the Fielding Practice.",
+  "location": "Morrisville ,North Carolina",
+  "date": "2021-12-04",
+  "startTime": "16:00",
+  "endTime": "18:00",
+  "image": "https://www.pitchvision.com/files/image/!stream/drills-close.jpg",
+  "hostName": {
+    "$oid": "61a5131afb3db95278891c75"
+  },
+  "createdAt": {
+    "$date": "2021-11-29T17:55:08.731Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-29T17:55:08.731Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a514d3fb3db95278891c77"
+  },
+  "category": "Practice",
+  "title": "Batting Practice",
+  "details": "After Fielding Team Will starts Batting Practice.",
+  "location": "Morrisville ,North Carolina",
+  "date": "2021-12-04",
+  "startTime": "16:00",
+  "endTime": "18:00",
+  "image": "https://thumbs.dreamstime.com/z/cricket-players-batting-practice-nets-trials-high-schools-batsmen-action-kearsney-college-grounds-bothas-hill-durban-south-87568734.jpg",
+  "hostName": {
+    "$oid": "61a5131afb3db95278891c75"
+  },
+  "createdAt": {
+    "$date": "2021-11-29T17:58:43.372Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-29T17:58:43.372Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a51599fb3db95278891c78"
+  },
+  "category": "Practice",
+  "title": "Bowling Practice",
+  "details": "After Fielding and batting, there will be a bowling practice.",
+  "location": "Morrisville ,North Carolina",
+  "date": "2021-12-04",
+  "startTime": "16:00",
+  "endTime": "18:00",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaVzN3r39EdEu-bDw1xWID9Oo5EiJeIf5ujw3Dff3jKtMd8Gamgn-13sHAr9SOPvkd80o&usqp=CAU",
+  "hostName": {
+    "$oid": "61a5131afb3db95278891c75"
+  },
+  "createdAt": {
+    "$date": "2021-11-29T18:02:01.599Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-29T18:02:01.599Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a5174db3fb745cb4665a96"
+  },
+  "category": "Game",
+  "title": "T20",
+  "details": "There will be 3 T20 games on Sunday.",
+  "location": "Morrisville ,North Carolina",
+  "date": "2021-12-05",
+  "startTime": "13:00",
+  "endTime": "21:00",
+  "image": "https://cdn.wisden.com/wp-content/uploads/2020/08/GettyImages-76759991-e1597636179423-980x530.jpg",
+  "hostName": {
+    "$oid": "61a5160eb3fb745cb4665a92"
+  },
+  "createdAt": {
+    "$date": "2021-11-29T18:09:17.187Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-29T18:09:17.187Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a51822b3fb745cb4665a97"
+  },
+  "category": "Game",
+  "title": "T10",
+  "details": "This will be 10 over games between two teams.",
+  "location": "Morrisville ,North Carolina",
+  "date": "2021-12-12",
+  "startTime": "20:00",
+  "endTime": "21:00",
+  "image": "https://www.mykhel.com/img/2019/10/t10-league-1571827040.jpg",
+  "hostName": {
+    "$oid": "61a5160eb3fb745cb4665a92"
+  },
+  "createdAt": {
+    "$date": "2021-11-29T18:12:50.030Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-29T18:12:50.030Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a519f4b3fb745cb4665a98"
+  },
+  "category": "Game",
+  "title": "Calibration",
+  "details": "Team winning calibration",
+  "location": "Morrisville ,North Carolina",
+  "date": "2021-11-30",
+  "startTime": "21:30",
+  "endTime": "22:30",
+  "image": "https://english.cdn.zeenews.com/sites/default/files/2015/09/24/416017-2007-t20-title.jpg",
+  "hostName": {
+    "$oid": "61a5160eb3fb745cb4665a92"
+  },
+  "createdAt": {
+    "$date": "2021-11-29T18:20:36.308Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-29T18:20:36.308Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6dd7c1f904d45b0005b62"
+  },
+  "category": "Meetings",
+  "title": "Team Meeting",
+  "details": "The team has to select their playing 11 in the meeting.",
+  "location": "Morrisville ,North Carolina",
+  "date": "2021-12-04",
+  "startTime": "12:00",
+  "endTime": "12:31",
+  "image": "http://2.bp.blogspot.com/-a00QBG5sDMw/UoyPVTWymOI/AAAAAAAACXY/uJyWvncN-rQ/s1600/team.jpg",
+  "hostName": {
+    "$oid": "61a6db6f1f904d45b0005b61"
+  },
+  "createdAt": {
+    "$date": "2021-12-01T02:27:08.507Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-01T02:48:19.462Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a6e3161f904d45b0005b64"
+  },
+  "category": "Meetings",
+  "title": "Game meeting",
+  "details": "There will be discussion on game",
+  "location": "Morrisville ,North Carolina",
+  "date": "2021-12-04",
+  "startTime": "22:00",
+  "endTime": "22:30",
+  "image": "http://2.bp.blogspot.com/-a00QBG5sDMw/UoyPVTWymOI/AAAAAAAACXY/uJyWvncN-rQ/s1600/team.jpg",
+  "hostName": {
+    "$oid": "61a6db6f1f904d45b0005b61"
+  },
+  "createdAt": {
+    "$date": "2021-12-01T02:51:02.723Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-01T02:53:55.864Z"
+  },
+  "__v": 0
+}]

@@ -9,7 +9,7 @@ const {
 } = require("../middlewares/validator");
 
 //GET /connections: send all the connection
-router.get("/", controller.showAll);
+router.get("/", controller.index);
 
 //GET /connections/new send new connection form
 router.get("/new", isLoggedIn, controller.new);
