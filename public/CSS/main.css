@@ -128,7 +128,7 @@ form button:hover {
 
 footer {
   padding: 40px 5px;
-  background-color: darkgreen;
+  background-color: blue;
 }
 
 .footer-media-nav {
@@ -155,7 +155,7 @@ footer {
 
 /* // h */
 header {
-  background-color: darkgreen;
+  background-color: blue;
   content: "";
   clear: both;
 }

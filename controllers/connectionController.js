@@ -1,6 +1,6 @@
 // const { findByIdAndDelete } = require('../models/connection');
-const { connections, body } = require("mongoose");
-const connection = require("../models/connection");
+// const { connections, body } = require("mongoose");
+// const connection = require("../models/connection");
 const model = require("../models/connection");
 const model_rsvp = require("../models/rsvp");
 
@@ -10,15 +10,15 @@ exports.index = (req, res, next) => {
     .find()
     .then((connections) => {
       //
-      let output = {};
+      let conn = {};
       connections.forEach((connection) => {
-        if (output[connection.category]) {
-          output[connection.category].push(connection);
+        if (conn[connection.category]) {
+          conn[connection.category].push(connection);
         } else {
-          output[connection.category] = [connection];
+          conn[connection.category] = [connection];
         }
       });
-      res.render("./connection/index", { output });
+      res.render("./connection/index", { conn });
     })
     .catch((err) => next(err));
 };
@@ -63,10 +63,10 @@ exports.findById = (req, res, next) => {
     .then((result) => {
       const [connection, rsvps] = result;
       if (connection) {
-        let output = connection.toObject();
-        output.rsvps = rsvps;
-        console.log("output =>", output);
-        res.render("./connection/show", { output });
+        let conn = connection.toObject();
+        conn.rsvps = rsvps;
+        console.log("conn =>", conn);
+        res.render("./connection/show", { conn });
       } else {
         let err = new Error("cannot find connection with id " + id);
         err.status = 404;
@@ -84,7 +84,7 @@ exports.editById = (req, res, next) => {
     .findById(id)
     .then((connection) => {
       if (connection) {
-        res.render("./connection/edit", { output: connection });
+        res.render("./connection/edit", { conn: connection });
       } else {
         let err = new Error("cannot find connection with id " + id);
         err.status = 404;

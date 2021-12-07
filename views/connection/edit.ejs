@@ -7,31 +7,31 @@
             <h2 class="new-connection-heading">About the connection</h2>
             <div class="new-connection-input-container">
                 <form method="POSt">
-                    <label  class="connection-input-lable">Category</label><br>
-                    <input type="text" name="category" class="connection-input" value="<%= output.category%>" required>
+                    <label  class="connection-input-lable">Topic</label><br>
+                    <input type="text" name="category" class="connection-input" value="<%= conn.category%>" required>
                     <br>
                     <label  class="connection-input-lable">Title</label><br>
-                    <input type="text" name="title" class="connection-input" value="<%= output.title%>" required>
+                    <input type="text" name="title" class="connection-input" value="<%= conn.title%>" required>
                     <br>
                     <label  class="connection-input-lable">Details</label><br>
-                    <textarea name="details" cols="30" rows="6" required minlength="10"><%= output.details%></textarea>
+                    <textarea name="details" cols="30" rows="6" required minlength="10"><%= conn.details%></textarea>
                     <br>
                     <label  class="connection-input-lable">Where</label><br>
-                    <input type="text" name="location" class="connection-input" value="<%= output.location%>" required>
+                    <input type="text" name="location" class="connection-input" value="<%= conn.location%>" required>
                     <br>
                     <label  class="connection-input-lable">When</label><br>
-                    <input type="date" name="date" class="connection-input" value="<%= output.date%>" required>
+                    <input type="date" name="date" class="connection-input" value="<%= conn.date%>" required>
                     <br>
                     <label  class="connection-input-lable">Start</label><br>
-                    <input type="time" name="startTime" class="connection-input" value="<%= output.startTime%>" required>
+                    <input type="time" name="startTime" class="connection-input" value="<%= conn.startTime%>" required>
                     <br>
                     <label  class="connection-input-lable">End</label><br>
-                    <input type="time" name="endTime" class="connection-input" value="<%= output.endTime%>" required>
+                    <input type="time" name="endTime" class="connection-input" value="<%= conn.endTime%>" required>
                     <br>
                     <label  class="connection-input-lable">Image URL</label><br>
-                    <input type="url" name="image" class="connection-input" placeholder="Image URL" value="<%= output.image%>" required>
+                    <input type="url" name="image" class="connection-input" placeholder="Image URL" value="<%= conn.image%>" required>
                     <br><br>
-                    <button formaction="/connections/<%= output._id%>?_method=PUT">Edit connection</button>
+                    <button formaction="/connections/<%= conn._id%>?_method=PUT">Edit connection</button>
                 </form>
             </div>
         </Section>

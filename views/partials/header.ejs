@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/CSS/main.css" type="text/css">
-    <!-- //<script src="/javascript/extra.js"></script> -->
+    <script src="/javascript/extra.js"></script>
     <title>Document</title>
 </head>
 
@@ -47,11 +47,12 @@
             </div>
             <nav class="user-specific-nav">
                 <% if(userInfo) { %>
-                    <a href="/users/profile" class="user-specific-option">Welcome, <%= userInfo['name'] %></a>
-                    <a href="/users/logout" class="user-specific-option">Log out</a>
+                    <a href="/users/profile" class="user-specific-option"><button>Welcome, <%= userInfo['name'] %></button></a>
+                    <a href="/users/logout" class="user-specific-option"><button>Log out</button></a>
                 <% } else { %>
-                    <a href="/users/login" class="user-specific-option">Login</a>
-                    <a href="/users/signup" class="user-specific-option">Sign-up</a>
+                    <a href="/users/login" class="user-specific-option"><button>Log In</button></a>
+                    <a href="/users/signup" class="user-specific-option"><button>Sign-up</button>
+                    </a>
                 <% } %>
             </nav>
 
@@ -59,9 +60,10 @@
         <div class="header-footer">
             <hr>
             <nav class="general-site-nav">
-                <a href="/connections" class="general-site-option">Connections</a>
+                <a href="/connections" class="general-site-option"><button>Connections</button></a>
                 <% if(userInfo) { %>
-                <a href="/connections/new" class="general-site-option">Create New Connections</a>
+                <a href="/connections/new" class="general-site-option"><button> New Connections</button>
+                </a>
                 <% } %>
             </nav>
 

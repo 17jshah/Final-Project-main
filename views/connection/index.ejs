@@ -4,12 +4,12 @@
     -->
     <main>
         <%= %>
-        <% if(Object.keys(output).length>0){%>
+        <% if(Object.keys(conn).length>0){%>
             <section class="category">
-                <% for(let key in output){ %>
+                <% for(let key in conn){ %>
                 <h2><%= key%></h2>
                 <article class="connection-in-category">
-                    <% output[key].forEach(conn =>{ %>
+                    <% conn[key].forEach(conn =>{ %>
                         <h3><a class="connection-link" href="/connections/<%= conn._id %>"><%= conn.title %></a></h3>
                     <% });%>
                 </article>
